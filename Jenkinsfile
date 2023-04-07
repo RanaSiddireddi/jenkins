@@ -17,6 +17,7 @@ pipeline {
         stage('two') {
             steps {
                 echo "i am step one stage two"
+                sudo hostname
             }
         }
         stage('three') {
