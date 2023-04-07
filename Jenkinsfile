@@ -9,7 +9,7 @@ pipeline {
         stage('one') {
             steps {
                 echo "i am step one stage one"
-                echo " details are ${SSH_CERD}"
+                echo " details are not shown here"
             }
         }
         stage('two') {
