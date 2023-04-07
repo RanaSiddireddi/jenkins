@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'ANSIBLE'
+    }
 
     environment {
         SSH_CRED = credentials('SSH_CRED')
@@ -9,7 +11,7 @@ pipeline {
         stage('one') {
             steps {
                 echo "i am step one stage one"
-                echo " details are not shown here"
+                echo "details are not shown here"
             }
         }
         stage('two') {
