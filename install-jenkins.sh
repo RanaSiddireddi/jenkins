@@ -16,7 +16,7 @@ Stat $?
 wget --no-check-certificate -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo &>>/tmp/jinstall.log 
 Stat $?
 
-rpm --import https://pkg.jenkins.io/redhat/jenkins.io-2023.key &>>/tmp/jinstall.log 
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key &>>/tmp/jinstall.log 
 Stat $?
 
 yum install jenkins --nogpgcheck -y &>>/tmp/jinstall.log
